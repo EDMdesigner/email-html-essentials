@@ -2,16 +2,22 @@
 <head>
 
 <style>
-    @media screen and (min-width: 600px) {
-        .dh {
-            display: none;
-        }
-    }
+	@media screen and (min-width: 600px) {
+		.dh{display:none}
+	}
 </style>
-    
 <!--[if (gte mso 9)|(IE)]>
-<style>.dh {display: none;}</style>
+	<style>
+		.dh {
+			display: none;
+		}
+
+		.dh table {
+			mso-hide: all;
+		}
+	</style>
 <![endif]-->
+
 </head>
 <body>
 <table style="mso-hide:all">
@@ -26,6 +32,14 @@
     <tr>
         <td style="background: red">
             hidden on desktop, visible on mobile. Visible on T-Online.de
+            
+            <table>
+                <tr>
+                    <td>
+                        Inner tables will also be hidden! :)
+                    </td>
+                </tr>
+            </table>
         </td>
     </tr>
 </table>
